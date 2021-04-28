@@ -1,0 +1,212 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+img{
+    vertical-align: middle;
+}
+.clr{
+    clear: both;
+}
+/* common css ends */
+
+body{
+    background: #70a1ff;
+}
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.box{
+    width: 800px;
+    height: 800px;
+    background: #f1f2f6;
+    text-align: center;
+}
+.box h1{
+    text-transform: uppercase;
+    font-size: 28px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    animation: jump 1.5s infinite linear;
+    transform: translateY(-20%);
+}
+@keyframes jump {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-20%);  
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+.box .image{
+    width: 400px;
+    float: left;
+}
+.box .image p{
+    padding-top: 20px;
+}
+.box .progress{
+    width: 400px;
+    float: left;
+    padding-top: 70px;
+}
+.box .progress .text{
+    float: left;
+    margin-left: 20px;
+}
+.box .progress .text p{
+    margin-top: 10px;
+    text-transform: capitalize;
+    padding-right: 5px; 
+}
+.box .progress .text p:nth-of-type(4){
+    margin-top: 13px;
+}
+.box .progress .text p:last-of-type{
+    margin-top: 17px;
+}
+.box .progress .bar{
+    float: left;
+}
+.box .progress .bar ul{
+    float: left;
+}
+.box .progress .bar ul li{
+    width: 200px;
+    height: 20px;
+    border: 2px solid #000;
+    box-sizing: border-box;
+    margin: 10px auto;
+    border-radius: 10px;
+    position: relative;
+}
+.box .progress .bar ul li::before{
+    content: '';
+    height: 100%;
+    background: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+}
+.box .progress .bar ul li:nth-child(1){
+    border-color: #ff4757;
+}
+.box .progress .bar ul li:nth-child(1)::before{
+    width: 80%;
+    background-color: #ff4757;
+    opacity: 0.8;
+    animation: progress1 1s 1 linear;
+    animation-fill-mode: forwards;
+}
+@keyframes progress1{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+    }
+}
+.box .progress .bar ul li:nth-child(2){
+    border-color: #eccc68;
+}
+.box .progress .bar ul li:nth-child(2)::before{
+    width: 60%;
+    background-color: #eccc68;
+    opacity: 0.8;
+    animation: progress2 1s 1 linear;
+    animation-fill-mode: forwards;
+}
+@keyframes progress2{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 60%;
+    }
+}
+.box .progress .bar ul li:nth-child(3){
+    border-color: #1e90ff;
+}
+.box .progress .bar ul li:nth-child(3)::before{
+    width: 70%;
+    background-color: #1e90ff;
+    opacity: 0.8;
+    animation: progress3 1s 1 linear;
+    animation-fill-mode: forwards;
+}
+@keyframes progress3{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
+}
+.box .progress .bar ul li:nth-child(4){
+    border-color: #3742fa;
+}
+.box .progress .bar ul li:nth-child(4)::before{
+    width: 50%;
+    background-color: #3742fa;
+    opacity: 0.8;
+    animation: progress4 1s 1 linear;
+    animation-fill-mode: forwards;
+}
+@keyframes progress4{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 50%;
+    }
+}
+.box .progress .bar ul li:nth-child(5){
+    border-color: #ff6348;
+}
+.box .progress .bar ul li:nth-child(5)::before{
+    width: 75%;
+    background-color: #ff6348;
+    opacity: 0.8;
+    animation: progress5 1s 1 linear;
+    animation-fill-mode: forwards;
+}
+@keyframes progress5{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 75%;
+    }
+}
+.box h2{
+    margin-top: 70px;
+    font-size: 40px;
+    color: #ff7f50;
+    animation: twinkle 1s infinite linear;
+}
+@keyframes twinkle {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.6);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
